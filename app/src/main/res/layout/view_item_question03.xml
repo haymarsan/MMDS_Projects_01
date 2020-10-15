@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout01"
+    android:paddingTop="@dimen/_4sdp"
+    android:layout_margin="@dimen/_8sdp"
+    android:background="@drawable/bg_square_round_border_plain">
+
+    <RelativeLayout
+        android:id="@+id/parentRelative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    <ImageView
+        android:id="@+id/ivBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_large"
+        android:src="@drawable/ic_baseline_format_bold_24" />
+
+    <ImageView
+        android:id="@+id/ivItalic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/ivBold"
+        android:src="@drawable/ic_baseline_format_italic_24"
+        android:layout_marginLeft="@dimen/margin_medium_2"/>
+
+    <ImageView
+        android:id="@+id/ivUnderlined"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/ivItalic"
+        android:src="@drawable/ic_baseline_format_underlined_24"
+        android:layout_marginLeft="@dimen/margin_medium_2"/>
+
+    <ImageView
+        android:id="@+id/ivListBullet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/ivUnderlined"
+        android:src="@drawable/ic_baseline_format_list_bulleted_24"
+        android:layout_marginLeft="@dimen/margin_medium_2"/>
+
+    <ImageView
+        android:id="@+id/ivListNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/ivListBullet"
+        android:src="@drawable/ic_baseline_format_list_numbered_24"
+        android:layout_marginLeft="@dimen/margin_medium_2"/>
+
+    <ImageView
+        android:id="@+id/ivImageAttach"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/ivListNumber"
+        android:src="@drawable/ic_baseline_image_24"
+        android:layout_marginLeft="@dimen/margin_medium_2"/>
+
+    <ImageView
+        android:id="@+id/ivVideoAttach"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/ivImageAttach"
+        android:src="@drawable/ic_baseline_video_library_24"
+        android:layout_marginLeft="@dimen/margin_medium_2"/>
+
+    <ImageView
+        android:id="@+id/ivFileAttach"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/ivVideoAttach"
+        android:src="@drawable/ic_baseline_attach_file_24"
+        android:layout_marginLeft="@dimen/margin_medium_2"/>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        app:layout_constraintTop_toBottomOf="@id/parentRelative"
+        android:background="#000000"
+        android:layout_marginTop="8dp"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        app:layout_constraintTop_toBottomOf="@+id/view1"
+        app:layout_constraintStart_toStartOf="parent"
+        android:padding="@dimen/margin_large"
+        android:hint="Write Your Answer .."/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

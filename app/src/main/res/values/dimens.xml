@@ -1,0 +1,58 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!-- Generic with ratio -->
+    <dimen name="margin_small">4dp</dimen>
+    <dimen name="margin_medium">8dp</dimen>
+    <dimen name="margin_medium_4">20dp</dimen>
+    <dimen name="margin_medium_2">16dp</dimen>
+    <dimen name="margin_medium_1">10dp</dimen>
+    <dimen name="margin_medium_3">20dp</dimen>
+    <dimen name="margin_large">24dp</dimen>
+    <dimen name="margin_xlarge">32dp</dimen>
+    <dimen name="margin_x_plus_large">40dp</dimen>
+    <dimen name="margin_xxlarge">48dp</dimen>
+    <dimen name="margin_xxxlarge">72dp</dimen>
+    <dimen name="margin_xxxxlarge">96dp</dimen>
+
+    <dimen name="margin_card_medium">6dp</dimen>
+    <dimen name="margin_card_medium_2">12dp</dimen>
+
+    <dimen name="margin_small_n">-4dp</dimen>
+    <dimen name="margin_card_medium_n">-6dp</dimen>
+    <dimen name="margin_medium_n">-8dp</dimen>
+    <dimen name="margin_card_medium_2_n">-12dp</dimen>
+    <dimen name="margin_medium_2_n">-16dp</dimen>
+    <dimen name="margin_medium_3_n">-18dp</dimen>
+    <dimen name="margin_large_n">-24dp</dimen>
+    <dimen name="margin_xlarge_n">-32dp</dimen>
+
+    <dimen name="text_smaller">10sp</dimen>
+    <dimen name="text_small">12sp</dimen>
+    <dimen name="text_regular">14sp</dimen>
+    <dimen name="text_regular_2x">16sp</dimen>
+    <dimen name="text_regular_2xx">18sp</dimen>
+    <dimen name="text_regular_3x">20sp</dimen>
+    <dimen name="text_regular_3xx">22sp</dimen>
+    <dimen name="text_heading_1x">24sp</dimen>
+    <dimen name="text_heading_1xx">28sp</dimen>
+    <dimen name="text_heading_1xxx">30sp</dimen>
+    <dimen name="text_heading_2x">32sp</dimen>
+    <dimen name="text_big">40sp</dimen>
+    <dimen name="text_big_2x">60sp</dimen>
+    <dimen name="text_big_3x">80sp</dimen>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+
+    <dimen name="spacing_line">1dp</dimen>
+    <dimen name="spacing_standard">16dp</dimen>
+    <dimen name="spacing_large">24dp</dimen>
+    <dimen name="spacing_xxxlarge">100dp</dimen>
+    <dimen name="size_numero">56dp</dimen>
+
+    <!-- Specific with ratio -->
+    <dimen name="_8sdp">8.00dp</dimen>
+    <dimen name="_16sdp">16.00dp</dimen>
+    <dimen name="_4sdp">4.00dp</dimen>
+
+</resources>
