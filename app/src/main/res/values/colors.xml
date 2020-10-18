@@ -6,4 +6,5 @@
 
     <color name="grey_border">#E1DCDC</color>
     <color name="box_color">#FEFEFE</color>
+    <color name="divider">#BDBDBD</color>
 </resources>

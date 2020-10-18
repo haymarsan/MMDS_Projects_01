@@ -51,6 +51,7 @@
     <dimen name="size_numero">56dp</dimen>
 
     <!-- Specific with ratio -->
+    <dimen name="content_padding">16dp</dimen>
     <dimen name="_100sdp">100.00dp</dimen>
     <dimen name="_101sdp">101.00dp</dimen>
     <dimen name="_102sdp">102.00dp</dimen>
