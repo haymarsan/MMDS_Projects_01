@@ -2,8 +2,7 @@
     <string name="app_name">MMDS Projects_01</string>
     <string name="question03">What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry.</string>
     <string name="lorem_Ipsum">What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.</string>
-    <string name="already_have_login"><![CDATA[Already have an Account? <font color="#FF5E13">Login</font>]]></string>
-    <string name="terms_and_condition"><![CDATA[By preceding, I agree that I have read and understood the <u><font color="#0F328B">Terms and Conditions</font></u>]]></string>
+    <string name="already_have_login"><![CDATA[Don\'t have an Account? <font color="#FFA500">Register.</font>]]></string>
     <string name="hello_worldRed"><![CDATA[<b><font color=#FF0000>Hello world!</font></b>]]></string>
     <string name="already_have_login2">Already have an Account? Login</string>
 

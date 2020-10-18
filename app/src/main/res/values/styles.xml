@@ -7,14 +7,27 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
 
     <style name="TextBoxStyle" parent="@style/Widget.AppCompat.EditText">
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">match_parent</item>
-        <item name="android:textSize">@dimen/text_regular_2x</item>
+        <item name="android:textSize">@dimen/text_regular</item>
         <item name="android:textColor">@color/text_color</item>
         <item name="android:background">@drawable/bg_square_border</item>
-        <item name="android:padding">@dimen/content_padding</item>
+        <item name="android:padding">@dimen/_12sdp</item>
+    </style>
+
+    <style name="PWBoxStyle" parent="@style/Widget.AppCompat.EditText">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textSize">@dimen/text_regular</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:background">@drawable/bg_square_border</item>
     </style>
 
 </resources>

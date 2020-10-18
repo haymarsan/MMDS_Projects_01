@@ -41,4 +41,10 @@ dependencies {
 
     implementation 'com.github.mukeshsolanki:android-otpview-pinview:2.1.2'
 
+
+    // For MM Text
+    implementation 'org.mmtextview:mmtextview:1.5'
+    implementation 'myatminsoe.mdetect.android:mdetect-android:3.2'
+    implementation "com.google.myanmartools:myanmar-tools:1.1.1"
+
 }

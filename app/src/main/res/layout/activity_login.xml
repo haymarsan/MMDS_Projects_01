@@ -23,12 +23,12 @@
             android:id="@+id/cv1"
             android:layout_width="@dimen/_200sdp"
             android:layout_height="@dimen/_80sdp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/_32sdp"
             android:elevation="@dimen/_4sdp"
             app:cardCornerRadius="@dimen/_4sdp"
-            android:layout_marginTop="@dimen/_42sdp">
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
 
             <ImageView
@@ -42,11 +42,11 @@
         </androidx.cardview.widget.CardView>
 
         <TextView
-            android:id="@+id/tvRegisterLabel"
+            android:id="@+id/tvLoginLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_32sdp"
-            android:text="Register your Account"
+            android:layout_marginTop="@dimen/_24sdp"
+            android:text="Login to Your Account"
             android:textColor="@android:color/black"
             android:textSize="@dimen/text_regular_3xx"
             android:textStyle="bold"
@@ -54,59 +54,92 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/cv1" />
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btnRegisterPhone"
+        <TextView
+            android:id="@+id/tvPhNoLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@id/tvRegisterLabel"
+            android:layout_marginTop="@dimen/_24sdp"
+            android:text="Phone Number"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_regular"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:text="Register With Phone Number"
-            android:background="@drawable/bg_square_round_border_login_button"
-            android:paddingLeft="@dimen/_32sdp"
-            android:paddingEnd="@dimen/_32sdp"
+            app:layout_constraintTop_toBottomOf="@id/tvLoginLabel" />
+
+
+        <EditText
+            android:id="@+id/etPhone"
+            style="@style/TextBoxStyle"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:hint="09 *** *** ***"
+            android:inputType="number"
+            android:paddingStart="@dimen/content_padding"
             android:textSize="@dimen/text_regular_2x"
-            android:layout_marginTop="@dimen/_32sdp"
-            android:textAllCaps="false"/>
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvPhNoLabel" />
+
 
         <TextView
-            android:id="@+id/tvOR"
+            android:id="@+id/tvPWLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_18sdp"
+            android:text="Password"
+            android:textSize="@dimen/text_regular"
+            android:textColor="@android:color/black"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/btnRegisterPhone"
+            app:layout_constraintTop_toBottomOf="@id/etPhone" />
+
+        <com.mukesh.OtpView
+            android:id="@+id/tvPassword"
+            style="@style/PWBoxStyle"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:inputType="numberPassword"
+            app:OtpCursorColor="@android:color/black"
+            app:OtpItemCount="6"
+            app:OtpLineColor="@color/grey_border"
+            app:OtpViewType="line"
+            app:OtpItemHeight="@dimen/_12sdp"
+            app:OtpItemWidth="@dimen/_38sdp"
             app:layout_constraintEnd_toEndOf="parent"
-            android:text="OR"
-            android:textSize="@dimen/text_regular_2xx"
-            android:layout_marginTop="@dimen/_24sdp"/>
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvPWLabel"
+            android:padding="@dimen/_16sdp"/>
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btnRegisterEmail"
-            android:layout_width="wrap_content"
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@id/tvOR"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:text="Register With Phone Email"
-            android:background="@drawable/bg_square_round_border_login_email_button"
-            android:paddingLeft="@dimen/_32sdp"
-            android:paddingEnd="@dimen/_32sdp"
+            android:layout_marginTop="@dimen/_24sdp"
+            android:background="@drawable/bg_square_round_border_green_button"
+            android:text="Login"
+            android:textAllCaps="false"
             android:textSize="@dimen/text_regular_2x"
-            android:layout_marginTop="@dimen/_32sdp"
-            android:textAllCaps="false"/>
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvForgetPW" />
 
-        <TextView
+        <org.mmtextview.components.MMTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/btnRegisterEmail"
-            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="@dimen/_24sdp"
             android:text="@string/already_have_login"
-            android:autoLink="all"
-            android:layout_marginTop="@dimen/_36sdp"
-            android:textColor="@android:color/black"/>
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_regular"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnLogin" />
 
-
+        <TextView
+            android:id="@+id/tvForgetPW"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forget Password ?"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="@dimen/text_small"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvPassword" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
