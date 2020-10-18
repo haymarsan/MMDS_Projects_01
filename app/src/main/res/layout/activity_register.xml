@@ -46,7 +46,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_24sdp"
-            android:text="Login to Your Account"
+            android:text="Register Your Account"
             android:textColor="@android:color/black"
             android:textSize="@dimen/text_regular_3xx"
             android:textStyle="bold"
@@ -72,19 +72,32 @@
             android:layout_marginTop="@dimen/_4sdp"
             android:hint="09 *** *** ***"
             android:inputType="number"
-            android:paddingStart="@dimen/content_padding"
+            android:paddingStart="@dimen/margin_large"
+            android:paddingEnd="@dimen/margin_xxxxlarge"
+            android:textSize="@dimen/text_regular_2x"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvPhNoLabel"
+            app:layout_constraintBaseline_toBaselineOf="@+id/btnSend"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_square_round_border_send_button"
+            android:text="Send"
+            android:textAllCaps="false"
             android:textSize="@dimen/text_regular_2x"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintStart_toEndOf="@id/etPhone"
             app:layout_constraintTop_toBottomOf="@id/tvPhNoLabel" />
 
 
         <TextView
-            android:id="@+id/tvPWLabel"
+            android:id="@+id/tvOTPCodeLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_18sdp"
-            android:text="Password"
+            android:text="OTP Code"
             android:textSize="@dimen/text_regular"
             android:textColor="@android:color/black"
             app:layout_constraintStart_toStartOf="parent"
@@ -94,7 +107,7 @@
             android:id="@+id/tvPassword"
             style="@style/PWBoxStyle"
             android:layout_marginTop="@dimen/_4sdp"
-            android:inputType="numberPassword"
+            android:inputType="number"
             app:OtpCursorColor="@android:color/black"
             app:OtpItemCount="6"
             app:OtpLineColor="@color/grey_border"
@@ -103,43 +116,55 @@
             app:OtpItemWidth="@dimen/_38sdp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tvPWLabel"
+            app:layout_constraintTop_toBottomOf="@id/tvOTPCodeLabel"
             android:padding="@dimen/_16sdp"/>
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btnLogin"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_24sdp"
-            android:background="@drawable/bg_square_round_border_green_button"
-            android:text="Login"
-            android:textAllCaps="false"
-            android:textSize="@dimen/text_regular_2x"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tvForgetPW" />
-
-        <org.mmtextview.components.MMTextView
-            android:id="@+id/tvDontHaveAccount"
+            android:id="@+id/btnRegisterNext"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_24sdp"
-            android:text="@string/already_have_login"
+            android:background="@drawable/bg_square_round_border_green_button"
+            android:text="Next"
+            android:textAllCaps="false"
+            android:textSize="@dimen/text_regular_2x"
+            android:paddingStart="@dimen/_48sdp"
+            android:paddingEnd="@dimen/_48sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvVeriCodeWasSent" />
+
+        <org.mmtextview.components.MMTextView
+            android:id="@+id/tvAlreadyHaveAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_24sdp"
+            android:text="@string/already_have_account"
             android:textColor="@android:color/black"
             android:textSize="@dimen/text_regular"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/btnLogin" />
+            app:layout_constraintTop_toBottomOf="@id/btnRegisterNext" />
 
         <TextView
-            android:id="@+id/tvForgetPW"
+            android:id="@+id/tvVeriCodeWasSent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Forget Password ?"
+            android:text="Verification Code was send"
             android:layout_marginTop="@dimen/_4sdp"
-            android:textColor="@android:color/holo_orange_dark"
             android:textSize="@dimen/text_small"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvPassword" />
+
+        <TextView
+            android:id="@+id/tvReSendOTP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resend OTP"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:textSize="@dimen/text_regular"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textColor="@android:color/holo_orange_dark"
             app:layout_constraintTop_toBottomOf="@+id/tvPassword" />
 
 
