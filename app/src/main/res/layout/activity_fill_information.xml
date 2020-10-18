@@ -42,11 +42,11 @@
         </androidx.cardview.widget.CardView>
 
         <TextView
-            android:id="@+id/tvLoginLabel"
+            android:id="@+id/tvFillInfoLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_24sdp"
-            android:text="Login to Your Account"
+            android:text="Please Fill Your Information"
             android:textColor="@android:color/black"
             android:textSize="@dimen/text_regular_3xx"
             android:textStyle="bold"
@@ -55,93 +55,94 @@
             app:layout_constraintTop_toBottomOf="@id/cv1" />
 
         <TextView
-            android:id="@+id/tvPhNoLabel"
+            android:id="@+id/tvNameLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_24sdp"
-            android:text="Phone Number"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:text="Name"
             android:textColor="@android:color/black"
-            android:textSize="@dimen/text_regular"
+            android:textSize="@dimen/text_regular_2x"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tvLoginLabel" />
+            app:layout_constraintTop_toBottomOf="@id/tvFillInfoLabel" />
 
 
         <EditText
-            android:id="@+id/etPhone"
-            style="@style/TextBoxStyle"
+            android:id="@+id/etName"
+            style="@style/TextBoxStyle2"
             android:layout_marginTop="@dimen/_4sdp"
-            android:hint="09 *** *** ***"
-            android:inputType="number"
+            android:hint="John Doe"
+            android:inputType="textCapWords"
             android:paddingStart="@dimen/content_padding"
             android:textSize="@dimen/text_regular_2x"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tvPhNoLabel" />
+            app:layout_constraintTop_toBottomOf="@id/tvNameLabel" />
 
 
         <TextView
-            android:id="@+id/tvPWLabel"
+            android:id="@+id/tvEmailLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_18sdp"
-            android:text="Password"
-            android:textSize="@dimen/text_regular"
+            android:text="Email (Optional)"
+            android:textSize="@dimen/text_regular_2x"
             android:textColor="@android:color/black"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/etPhone" />
+            app:layout_constraintTop_toBottomOf="@id/etName" />
 
-        <com.mukesh.OtpView
-            android:id="@+id/tvPassword"
-            style="@style/PWBoxStyle"
+        <EditText
+            android:id="@+id/etEmail"
+            style="@style/TextBoxStyle2"
             android:layout_marginTop="@dimen/_4sdp"
-            android:inputType="numberPassword"
-            app:OtpCursorColor="@android:color/black"
-            app:OtpItemCount="6"
-            app:OtpLineColor="@color/grey_border"
-            app:OtpViewType="line"
-            app:OtpItemHeight="@dimen/_12sdp"
-            app:OtpItemWidth="@dimen/_38sdp"
+            android:hint="Enter Your Email"
+            android:inputType="textEmailAddress"
+            android:paddingStart="@dimen/content_padding"
+            android:textSize="@dimen/text_regular_2x"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tvPWLabel"
-            android:padding="@dimen/_16sdp"/>
+            app:layout_constraintTop_toBottomOf="@id/tvEmailLabel" />
+
+        <TextView
+            android:id="@+id/tvReferralCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_18sdp"
+            android:text="Referral Code (Optional)"
+            android:textSize="@dimen/text_regular_2x"
+            android:textColor="@android:color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etEmail" />
+
+        <EditText
+            android:id="@+id/etReferralCode"
+            style="@style/TextBoxStyle2"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:hint="Enter Your Email"
+            android:inputType="textEmailAddress"
+            android:paddingStart="@dimen/content_padding"
+            android:textSize="@dimen/text_regular_2x"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvReferralCode" />
+
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btnLogin"
+            android:id="@+id/btnCreateNewAC"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_24sdp"
             android:background="@drawable/bg_square_round_border_green_button"
-            android:text="Login"
+            android:text="Create New Account"
             android:textColor="@android:color/white"
             android:textAllCaps="false"
             android:textSize="@dimen/text_regular_2x"
+            android:paddingStart="@dimen/_48sdp"
+            android:paddingEnd="@dimen/_48sdp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tvForgetPW" />
+            app:layout_constraintTop_toBottomOf="@id/etReferralCode" />
 
-        <org.mmtextview.components.MMTextView
-            android:id="@+id/tvDontHaveAccount"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_24sdp"
-            android:text="@string/already_have_login"
-            android:textColor="@android:color/black"
-            android:textSize="@dimen/text_regular"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/btnLogin" />
 
-        <TextView
-            android:id="@+id/tvForgetPW"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Forget Password ?"
-            android:layout_marginTop="@dimen/_4sdp"
-            android:textColor="@android:color/holo_orange_dark"
-            android:textSize="@dimen/text_small"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvPassword" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
