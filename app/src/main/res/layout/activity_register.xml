@@ -117,10 +117,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tvOTPCodeLabel"
-            android:paddingStart="@dimen/_24sdp"
-            android:paddingEnd="@dimen/_24sdp"
-            android:paddingTop="@dimen/_18sdp"
-            android:paddingBottom="@dimen/_18sdp"/>
+            android:padding="@dimen/_12sdp"/>
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnRegisterNext"
