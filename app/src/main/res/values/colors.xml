@@ -7,4 +7,6 @@
     <color name="grey_border">#E1DCDC</color>
     <color name="box_color">#FEFEFE</color>
     <color name="divider">#BDBDBD</color>
+    <color name="green">#142915</color>
+    <color name="green01">#0A9B21</color>
 </resources>
