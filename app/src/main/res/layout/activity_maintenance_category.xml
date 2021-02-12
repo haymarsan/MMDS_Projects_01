@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MaintenanceCategoryActivity"
+    android:background="@android:color/white"
+    android:padding="@dimen/margin_large">
+
+
+    <TextView
+        android:id="@+id/tvTitleMaintenanceCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_medium_2"
+        android:gravity="center_vertical"
+        android:text="Maintenance Category"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_heading_1xx"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvLabelMaintenanceCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="Maintenance Category"
+        android:textSize="@dimen/text_regular_2x"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_16sdp"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitleMaintenanceCategory"
+        tools:layout_editor_absoluteX="24dp" />
+
+
+    <EditText
+        android:id="@+id/tvMaintenanceItem"
+        style="@style/TextBoxStyle"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:enabled="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:textColor="@android:color/black"
+        android:hint="Select Maintenance Category"
+        android:longClickable="false"
+        android:textSize="@dimen/text_regular_2x"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLabelMaintenanceCategory"/>
+
+    <ImageView
+        android:id="@+id/ivMaintenanceCategory"
+        android:layout_width="@dimen/_18sdp"
+        android:layout_height="@dimen/_18sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:background="@drawable/ic_baseline_arrow_drop_down_24"
+        app:layout_constraintBottom_toBottomOf="@+id/tvMaintenanceItem"
+        app:layout_constraintEnd_toEndOf="@+id/tvMaintenanceItem"
+        app:layout_constraintTop_toTopOf="@id/tvMaintenanceItem" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnAddMore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:background="@drawable/bg_square_round_border_green_button"
+        android:text="Add More"
+        android:textColor="@android:color/white"
+        android:textAllCaps="false"
+        android:textSize="@dimen/text_regular_2x"
+        android:paddingStart="@dimen/_48sdp"
+        android:paddingEnd="@dimen/_48sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvMaintenanceItem" />
+
+
+    <TextView
+        android:id="@+id/tvMaintenanceDate"
+        style="@style/TextBoxStyle3"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:enabled="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:textColor="@android:color/black"
+        android:text="Date "
+        android:drawableRight="@drawable/ic_baseline_calendar_today_24"
+        android:longClickable="false"
+        android:textSize="@dimen/text_regular_2x"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAddMore"/>
+
+    <EditText
+        android:id="@+id/tvChooseFiles"
+        style="@style/TextBoxStyle3"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:enabled="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:textColor="@android:color/black"
+        android:hint="Choose Files"
+        android:longClickable="false"
+        android:textAlignment="textEnd"
+        android:textSize="@dimen/text_regular_2x"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvMaintenanceDate"
+        app:layout_constraintTop_toBottomOf="@+id/btnAddMore"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvMaintenanceCategory"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_300sdp"
+        android:overScrollMode="never"
+        android:visibility="visible"
+        android:layout_marginTop="@dimen/_24sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMaintenanceDate" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSaveCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_24sdp"
+        android:background="@drawable/bg_square_round_border_green_button"
+        android:text="Save"
+        android:textColor="@android:color/white"
+        android:textAllCaps="false"
+        android:textSize="@dimen/text_regular_2x"
+        android:paddingStart="@dimen/_48sdp"
+        android:paddingEnd="@dimen/_48sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rvMaintenanceCategory" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnCancelCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_24sdp"
+        android:background="@drawable/bg_square_round_border_green_button"
+        android:text="Save"
+        android:textColor="@android:color/white"
+        android:textAllCaps="false"
+        android:textSize="@dimen/text_regular_2x"
+        android:paddingStart="@dimen/_48sdp"
+        android:paddingEnd="@dimen/_48sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rvMaintenanceCategory" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
